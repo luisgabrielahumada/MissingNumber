@@ -42,8 +42,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Model\Numbers.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\INumberService.cs" />
+    <Compile Include="Services\NumberService.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

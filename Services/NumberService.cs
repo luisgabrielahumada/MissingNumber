@@ -38,6 +38,12 @@ namespace MissingNumbers.Services
                                where m.Frequency > n.Frequency
                                select n.Number).ToList();
 
+            foreach (Numbers i in arr)
+            {
+                if (!brr.Exists(item => item.Number == i.Number))
+                    query.Add(i.Number);
+            }
+
             return query;
         }
 
